@@ -43,9 +43,9 @@ const ChatBox = () => {
       {MESSAGES.map((message) => (
         <Message key={message.id} message={message} />
       ))}
-      <div ref={scrolltoEnd} className="mt-[3px] bg-transparent"></div>
+      <div ref={scrolltoEnd} className="mt-[3px] bg-transparent h-[5.2vh]"></div>
       {currentUser && (
-        <div className="sticky bottom-0 z-10 mx-2 my-2">
+        <div className="fixed containerWrap bottom-0 z-10 mx-2 my-2">
           <SendMessage />
         </div>
       )}
