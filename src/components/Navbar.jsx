@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="sticky top-0 z-10 bg-base-300">
       <div className="containerWrap navbar  flex text-white justify-between">
         <p className="text-xl font-bold">
-          <Link to="/">iChat</Link>
+          <Link to="/">Playground Chat</Link>
         </p>
         <div>
           {currentUser ? (
