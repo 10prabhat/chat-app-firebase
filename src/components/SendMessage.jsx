@@ -22,6 +22,7 @@ const SendMessage = () => {
         createdAt: serverTimestamp(),
         uid,
       });
+      setValue("");
     } catch (error) {
       console.log(error);
     }
@@ -30,14 +31,17 @@ const SendMessage = () => {
     <div className="w-full">
       <form action="" className="flex">
         <input
-        autoFocus
+          autoFocus
           placeholder="Send now"
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
           className="input bg-base-200 w-full rounded-none rounded-l-xl focus:outline-none "
         />
-        <button onClick={handleSubmit} className="rounded-r-xl text-white bg-primary  px-4">
+        <button
+          onClick={handleSubmit}
+          className="rounded-r-xl text-white bg-primary  px-4"
+        >
           <IoSend size={18} />
         </button>
       </form>
